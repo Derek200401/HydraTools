@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HydraTools | Config and skin tools for Mobile Legends</title>
+  <meta name="description" content="Download HydraTools for Android. Drone view up to 50x, 3D view, map vision, skin and audio patches for Mobile Legends: Bang Bang. Works through Shizuku. No root, no virtual space.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HydraTools | Config and skin tools for Mobile Legends">
+  <meta property="og:description" content="Android app. Works through Shizuku. No root, no virtual space.">
+  <meta property="og:image" content="/img/og.jpg">
+  <meta name="theme-color" content="#0f141a">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/Poppins-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav-in">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true">H</span><span>HydraTools</span></a>
+    <nav class="links" id="links" aria-label="Sections">
+      <a href="#features">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="#setup">Setup</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download">Download</a>
+    </nav>
+    <a class="btn btn-sm btn-primary nav-cta" href="#download"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Get the app</span></a>
+    <button type="button" class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="links"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="pill reveal"><i class="dot"></i>Android app for Mobile Legends: Bang Bang</span>
+        <h1 class="reveal" data-d="1">Config and skin tools for <span class="hl">Mobile Legends</span></h1>
+        <p class="lede reveal" data-d="2">Change the camera, the vision range and the skins from one app. It runs through Shizuku, so you don&rsquo;t need root and you don&rsquo;t need a virtual space.</p>
+        <div class="cta reveal" data-d="3">
+          <a class="btn btn-primary btn-lg" href="/download" download data-dl><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lbl">Download APK</span><small class="sz" data-info="size"></small></a>
+          <a class="btn btn-ghost btn-lg" href="https://t.me/wanitomodzz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 4.4L2.9 11.6c-.9.4-.9 1.1-.2 1.3l4.7 1.5 1.8 5.5c.2.6.4.8.8.8.4 0 .6-.2.9-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8L22.8 5.7c.3-1.3-.5-1.9-1.3-1.3zM9.1 13.7l9.3-5.9c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.2-1.9-4.4z" fill="currentColor"/></svg><span>Telegram</span></a>
+        </div>
+        <ul class="checks reveal" data-d="4">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No root</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No virtual space</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Shizuku only</li>
+        </ul>
+      </div>
+      <div class="hero-visual" id="stage" aria-hidden="true">
+        <div class="glow"></div>
+        <div class="dev d-l"><img src="/img/skins-effects.jpg" width="540" height="1230" alt=""></div>
+        <div class="dev d-r"><img src="/img/custom-drone-range.jpg" width="540" height="1230" alt=""></div>
+        <div class="dev d-c"><img src="/img/dashboard.jpg" width="540" height="1230" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-in">
+      <div class="stat reveal"><b><span data-count="50">50</span>x</b><span>Max custom drone zoom</span></div>
+      <div class="stat reveal" data-d="1"><b data-count="3">3</b><span>3D view presets</span></div>
+      <div class="stat reveal" data-d="2"><b data-count="6">6</b><span>Hero roles with skins</span></div>
+      <div class="stat reveal" data-d="3"><b data-count="0">0</b><span>Root or virtual space needed</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="features">
+    <div class="container">
+      <header class="sec-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Everything the app does, in one place</h2>
+        <p>These are the tools you see inside HydraTools. FREE and VIP tags are copied from the app.</p>
+      </header>
+
+      <div class="bento">
+        <article class="card c-7 reveal">
+          <div class="card-t">
+            <div class="tags"><i class="tag">Free</i></div>
+            <h3>Drone view, 1x to 50x</h3>
+            <p>Pick a 1x, 2x, 3x or 4x preset, or type your own zoom between 1 and 50, then slide to apply.</p>
+          </div>
+          <div class="card-m two"><img src="/img/custom-drone-range.jpg" width="540" height="1230" loading="lazy" alt="Custom drone range screen"><img src="/img/drone-views.jpg" width="540" height="1230" loading="lazy" alt="Drone views screen"></div>
+        </article>
+
+        <article class="card c-5 reveal" data-d="1">
+          <div class="card-t">
+            <div class="tags"><i class="tag">Free</i></div>
+            <h3>3D View V1, V2, V3</h3>
+            <p>A slightly higher angle, a cinematic wide FOV, or an ultra-wide view.</p>
+          </div>
+          <div class="card-m bot"><img src="/img/3d-view-v2.jpg" width="540" height="1230" loading="lazy" alt="3D View V2 screen"></div>
+        </article>
+
+        <article class="card c-4 reveal">
+          <div class="card-t">
+            <div class="tags"><i class="tag">Free</i><i class="tag vip">VIP</i></div>
+            <h3>Map vision and timers</h3>
+            <p>Wider hero, tower and soldier vision. Jungle, Lord and Turtle timers on the minimap.</p>
+          </div>
+          <div class="card-m bot"><img src="/img/map-vision.jpg" width="540" height="1230" loading="lazy" alt="Map Vision screen"></div>
+        </article>
+
+        <article class="card c-4 reveal" data-d="1">
+          <div class="card-t">
+            <div class="tags"><i class="tag">Free</i></div>
+            <h3>Skins by role</h3>
+            <p>Tank, Fighter, Assassin, Marksman, Mage and Support. Search by hero name.</p>
+          </div>
+          <div class="card-m"><img src="/img/skin-tank.jpg" width="540" height="1230" loading="lazy" alt="Visual Skin screen for Tank"></div>
+        </article>
+
+        <article class="card c-4 reveal" data-d="2">
+          <div class="card-t">
+            <div class="tags"><i class="tag">Free</i></div>
+            <h3>Effects and music</h3>
+            <p>Recall, elimination, emotes, respawn and notification effects, plus custom music packs.</p>
+          </div>
+          <div class="card-m"><img src="/img/audio-battle-effects.jpg" width="540" height="1230" loading="lazy" alt="Audio and battle effects screen"></div>
+        </article>
+
+        <article class="card c-6 wide reveal">
+          <div class="card-t">
+            <div class="tags"><i class="tag vip">VIP</i></div>
+            <h3>System optimizer</h3>
+            <p>Maximize FPS, Core Overclock, Zero Lag UI, Network Stabilizer, RAM Booster and Thermal Bypass. System tweaks only; the app says Document.unity3d is not modified by them.</p>
+          </div>
+          <div class="card-m"><img src="/img/optimizer-list.jpg" width="540" height="1230" loading="lazy" alt="System Optimizer list"></div>
+        </article>
+
+        <article class="card c-6 wide reveal" data-d="1">
+          <div class="card-t">
+            <div class="tags"><i class="tag">Free</i></div>
+            <h3>Backup and restore</h3>
+            <p>Reverts all gameplay patches and system tweaks, restores the original Document.unity3d and keeps your downloaded game resources.</p>
+          </div>
+          <div class="card-m bot"><img src="/img/backup-restore.jpg" width="540" height="1230" loading="lazy" alt="Backup and Restore screen"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="screens">
+    <div class="container">
+      <header class="sec-head reveal">
+        <span class="eyebrow">Screens</span>
+        <h2>See it before you install it</h2>
+        <p>Real screenshots from the app. Tap one to open it full size. Taken on Android 12 with Mobile Legends 2.2.16.12322, Philippines server.</p>
+      </header>
+      <div class="tabs reveal" role="tablist" aria-label="Filter screens">
+        <button type="button" class="tab is-on" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button type="button" class="tab" role="tab" aria-selected="false" data-filter="config">Config</button>
+        <button type="button" class="tab" role="tab" aria-selected="false" data-filter="optimizer">Optimizer</button>
+        <button type="button" class="tab" role="tab" aria-selected="false" data-filter="skins">Skins and audio</button>
+        <span class="tab-arrows"><button type="button" class="round" id="s-prev" aria-label="Scroll left">&larr;</button><button type="button" class="round" id="s-next" aria-label="Scroll right">&rarr;</button></span>
+      </div>
+    </div>
+    <div class="rail-wrap">
+      <div class="rail" id="rail" tabindex="0" aria-label="Screenshots">
+        <figure class="slide" data-group="config">
+          <button type="button" class="device" aria-label="Open Dashboard"><img src="/img/dashboard.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Dashboard"></button>
+          <figcaption><b>Dashboard</b><span>Memory, device and game version</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="config">
+          <button type="button" class="device" aria-label="Open Drone views"><img src="/img/drone-views.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Drone views"></button>
+          <figcaption><b>Drone views</b><span>1x to 4x presets</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="config">
+          <button type="button" class="device" aria-label="Open Custom drone range"><img src="/img/custom-drone-range.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Custom drone range"></button>
+          <figcaption><b>Custom drone range</b><span>Any zoom from 1 to 50</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="config">
+          <button type="button" class="device" aria-label="Open 3D View V1"><img src="/img/3d-view-v1.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: 3D View V1"></button>
+          <figcaption><b>3D View V1</b><span>Higher, wider angle</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="config">
+          <button type="button" class="device" aria-label="Open 3D View V2"><img src="/img/3d-view-v2.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: 3D View V2"></button>
+          <figcaption><b>3D View V2</b><span>Cinematic, wider FOV</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="config">
+          <button type="button" class="device" aria-label="Open 3D View V3"><img src="/img/3d-view-v3.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: 3D View V3"></button>
+          <figcaption><b>3D View V3</b><span>Ultra-wide view</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="config">
+          <button type="button" class="device" aria-label="Open Map Vision"><img src="/img/map-vision.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Map Vision"></button>
+          <figcaption><b>Map Vision</b><span>Longer vision range</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="config">
+          <button type="button" class="device" aria-label="Open Backup / Restore"><img src="/img/backup-restore.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Backup / Restore"></button>
+          <figcaption><b>Backup / Restore</b><span>Revert patches anytime</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="optimizer">
+          <button type="button" class="device" aria-label="Open System Optimizer"><img src="/img/optimizer-list.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: System Optimizer"></button>
+          <figcaption><b>System Optimizer</b><span>Full tool list</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="optimizer">
+          <button type="button" class="device" aria-label="Open Maximize FPS"><img src="/img/maximize-fps.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Maximize FPS"></button>
+          <figcaption><b>Maximize FPS</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="optimizer">
+          <button type="button" class="device" aria-label="Open Core Overclock"><img src="/img/core-overclock.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Core Overclock"></button>
+          <figcaption><b>Core Overclock</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="optimizer">
+          <button type="button" class="device" aria-label="Open Zero Lag UI"><img src="/img/zero-lag-ui.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Zero Lag UI"></button>
+          <figcaption><b>Zero Lag UI</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="optimizer">
+          <button type="button" class="device" aria-label="Open Network Stabilizer"><img src="/img/network-stabilizer.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Network Stabilizer"></button>
+          <figcaption><b>Network Stabilizer</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="optimizer">
+          <button type="button" class="device" aria-label="Open RAM Booster"><img src="/img/ram-booster.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: RAM Booster"></button>
+          <figcaption><b>RAM Booster</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="optimizer">
+          <button type="button" class="device" aria-label="Open Thermal Bypass"><img src="/img/thermal-bypass.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Thermal Bypass"></button>
+          <figcaption><b>Thermal Bypass</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Skins and Effects"><img src="/img/skins-effects.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Skins and Effects"></button>
+          <figcaption><b>Skins and Effects</b><span>Patches, audio, battle effects</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Audio and battle effects"><img src="/img/audio-battle-effects.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Audio and battle effects"></button>
+          <figcaption><b>Audio and battle effects</b><span>Recall, elimination, emotes</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Respawn and notification"><img src="/img/respawn-notification.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Respawn and notification"></button>
+          <figcaption><b>Respawn and notification</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Skins: Tank"><img src="/img/skin-tank.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Skins: Tank"></button>
+          <figcaption><b>Skins: Tank</b><span>Search by hero name</span></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Skins: Fighter"><img src="/img/skin-fighter.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Skins: Fighter"></button>
+          <figcaption><b>Skins: Fighter</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Skins: Assassin"><img src="/img/skin-assassin.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Skins: Assassin"></button>
+          <figcaption><b>Skins: Assassin</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Skins: Marksman"><img src="/img/skin-marksman.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Skins: Marksman"></button>
+          <figcaption><b>Skins: Marksman</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Skins: Mage"><img src="/img/skin-mage.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Skins: Mage"></button>
+          <figcaption><b>Skins: Mage</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Skins: Support"><img src="/img/skin-support.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Skins: Support"></button>
+          <figcaption><b>Skins: Support</b></figcaption>
+        </figure>
+        <figure class="slide" data-group="skins">
+          <button type="button" class="device" aria-label="Open Custom music packs"><img src="/img/custom-music.jpg" width="540" height="1230" loading="lazy" decoding="async" alt="HydraTools screen: Custom music packs"></button>
+          <figcaption><b>Custom music packs</b><span>Pick a track, patch it in</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="setup">
+    <div class="container setup-grid">
+      <header class="sec-head left reveal">
+        <span class="eyebrow">Setup</span>
+        <h2>Five steps, no root</h2>
+        <p>Shizuku is the only thing you install first. Everything else is inside HydraTools.</p>
+        <a class="btn btn-ghost" href="https://shizuku.rikka.app/" target="_blank" rel="noopener">Get Shizuku</a>
+      </header>
+      <ol class="timeline">
+        <li class="reveal"><span class="num">1</span><div><h3>Install and start Shizuku</h3><p>Start the service from the Shizuku app. On Android 11 and up you can use wireless debugging.</p></div></li>
+        <li class="reveal"><span class="num">2</span><div><h3>Download the APK</h3><p>Use the download button below. Android asks you to allow installs from your browser the first time.</p></div></li>
+        <li class="reveal"><span class="num">3</span><div><h3>Open HydraTools</h3><p>Allow the Shizuku permission request when it appears.</p></div></li>
+        <li class="reveal"><span class="num">4</span><div><h3>Apply a patch</h3><p>Open Config or Skin, pick an item, read the Patch Preview, then slide to apply.</p></div></li>
+        <li class="reveal"><span class="num">5</span><div><h3>Play, or undo</h3><p>Open Mobile Legends. To get the original files back, run Backup / Restore.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="download">
+    <div class="container">
+      <div class="dl-card reveal">
+        <div class="dl-main">
+          <span class="eyebrow">Download</span>
+          <div class="file"><span class="mark lg" aria-hidden="true">H</span><div><h2 data-info="file">HydraTools.apk</h2><p>Android app, installs like any APK</p></div></div>
+          <dl class="meta">
+            <div><dt>Version</dt><dd data-info="version">&mdash;</dd></div>
+            <div><dt>Size</dt><dd data-info="size">&mdash;</dd></div>
+            <div><dt>Updated</dt><dd data-info="updated">&mdash;</dd></div>
+            <div><dt>Needs</dt><dd>Shizuku</dd></div>
+          </dl>
+          <div class="hash-row">
+            <span class="hash-l">SHA-256</span>
+            <code data-info="sha">&mdash;</code>
+            <button type="button" class="copy" id="copy" hidden>Copy</button>
+          </div>
+        </div>
+        <div class="dl-side">
+          <a class="btn btn-primary btn-xl" href="/download" download data-dl id="dl-main"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lbl">Download HydraTools.apk</span></a>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+          <ul class="checks col">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No root</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No virtual space</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Shizuku only</li>
+          </ul>
+          <p class="fine">Android may warn you because the file doesn&rsquo;t come from the Play Store. Compare the SHA-256 with the file you received before installing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="container faq-grid">
+      <header class="sec-head left reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Quick answers</h2>
+        <p>Something missing? Message me on Telegram.</p>
+        <a class="btn btn-ghost" href="https://t.me/wanitomodzz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 4.4L2.9 11.6c-.9.4-.9 1.1-.2 1.3l4.7 1.5 1.8 5.5c.2.6.4.8.8.8.4 0 .6-.2.9-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8L22.8 5.7c.3-1.3-.5-1.9-1.3-1.3zM9.1 13.7l9.3-5.9c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.2-1.9-4.4z" fill="currentColor"/></svg><span>@wanitomodzz</span></a>
+      </header>
+      <div class="faq reveal">
+        <details><summary>Do I need root?</summary><div><p>No. HydraTools works through Shizuku, so your phone stays unrooted.</p></div></details>
+        <details><summary>Do I need a virtual space or a cloned game?</summary><div><p>No. You use the normal Mobile Legends you already have installed.</p></div></details>
+        <details><summary>What is Shizuku?</summary><div><p>A free app that lets other apps run system-level actions after you start it, for example with wireless debugging on Android 11 and up. Get it from <a href="https://shizuku.rikka.app/" target="_blank" rel="noopener">shizuku.rikka.app</a>.</p></div></details>
+        <details><summary>How do I undo a patch?</summary><div><p>Open Config, then Backup / Restore. It reverts all gameplay patches and system tweaks, restores the original Document.unity3d and keeps your downloaded game resources.</p></div></details>
+        <details><summary>What do FREE and VIP mean?</summary><div><p>They are the tags shown inside the app. FREE items are open to everyone, VIP items are marked VIP in HydraTools.</p></div></details>
+        <details><summary>Why does Android warn me when I install it?</summary><div><p>Because the APK doesn&rsquo;t come from the Play Store. Check that the SHA-256 on this page matches your file before you install.</p></div></details>
+        <details><summary>Which game version does it work with?</summary><div><p>The dashboard shows the game version and region the app finds. The screenshots here are from 2.2.16.12322 on the Philippines server. Game updates can change things, so message me if a patch stops working.</p></div></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container foot-in">
+    <div class="foot-top">
+      <a class="brand" href="#top"><span class="mark" aria-hidden="true">H</span><span>HydraTools</span></a>
+      <a class="btn btn-ghost btn-sm" href="https://t.me/wanitomodzz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 4.4L2.9 11.6c-.9.4-.9 1.1-.2 1.3l4.7 1.5 1.8 5.5c.2.6.4.8.8.8.4 0 .6-.2.9-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8L22.8 5.7c.3-1.3-.5-1.9-1.3-1.3zM9.1 13.7l9.3-5.9c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.2-1.9-4.4z" fill="currentColor"/></svg><span>Contact on Telegram</span></a>
+    </div>
+    <p class="fine">Shared by <a href="https://t.me/wanitomodzz" target="_blank" rel="noopener">@wanitomodzz</a>. HydraTools is an independent tool. It is not affiliated with or endorsed by Moonton. Mobile Legends: Bang Bang and its artwork belong to their owners. Changing game files can go against the game&rsquo;s terms of service, so use it at your own risk.</p>
+  </div>
+</footer>
+
+<dialog id="lb" aria-label="Screenshot viewer">
+  <button type="button" class="lb-x" id="lb-close" aria-label="Close">&times;</button>
+  <button type="button" class="lb-nav prev" id="lb-prev" aria-label="Previous">&larr;</button>
+  <figure>
+    <img id="lb-img" alt="">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+  <button type="button" class="lb-nav next" id="lb-next" aria-label="Next">&rarr;</button>
+</dialog>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
